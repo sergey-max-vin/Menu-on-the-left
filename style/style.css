@@ -1,0 +1,70 @@
+* {
+    margin: 0; /*Обнуление страницы*/
+    padding: 0; /*Обнуление страницы*/
+
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.title h1 {
+    font-family: Arial, Helvetica, sans-serif; /*Шрифты*/
+    font-size: 40px; /*Размер шрифта загаловка*/
+    margin-bottom: 50px; /*Отступ загаловка от верхнего края*/
+    color: #1E90FF; /*Добавили цвет загаловку*/
+}
+
+.title span {
+    color: #00FFFF;
+}
+
+.list_menu a {
+    font-family: Arial, Helvetica, sans-serif; /*Шрифты пунктов меню*/
+    font-size: 25px; /*Размер шрифта меню*/
+    color: #00CED1; /*Добавили цвет тексту меню*/
+    border-left: 2px solid #1E90FF;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.list_menu a:hover {
+    border-left: 2px solid #00FFFF;
+    padding-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.footer_menu p {
+    font-family: Arial, Helvetica, sans-serif; /*Шрифты футера*/
+    font-size: 15px; /*Размер шрифта в надписи футера*/
+    color: #1E90FF; /*Добавили цвет тексту в футере*/
+}
+
+.list_menu {
+    margin-bottom: 50px; /*Отступ надписи футера от текста меню*/
+}
+
+.list_menu li {
+    margin: 25px 0; /*Отступ текста меню сверху и снизу по 25, а снизу и сверху 0*/
+}
+
+.menu {
+    padding: 25vh 50px; /*Сдвиг меню по центру: Лево и право по 25, верх и низ по 50*/
+    position: fixed; /*Меню пверх рисунка фона*/
+    background: rgba(20, 20, 20, 0.5);
+    height: 100vh;
+    backdrop-filter: blur(16px);
+    border-right: 5px solid #0a3560;
+    left: -346px;
+    transition: all 0.2s ease;
+}
+
+.menu:hover {
+    left: 0;
+    transition: all 0.2s ease;
+}
+
+.content {
+    width: 100vw; /*Убираем скрол на странице*/
+    height: 100vh;
+    overflow: hidden; /*Выравнивание страницы по краям*/
+}
