@@ -15,22 +15,22 @@
 }
 
 .title span {
-    color: #00FFFF;
+    color: #00FFFF; /*Окрашивание первой буквы загаловка, смотрите строку 12 в html функцию span*/
 }
 
 .list_menu a {
     font-family: Arial, Helvetica, sans-serif; /*Шрифты пунктов меню*/
     font-size: 25px; /*Размер шрифта меню*/
     color: #00CED1; /*Добавили цвет тексту меню*/
-    border-left: 2px solid #1E90FF;
-    padding-left: 5px;
-    transition: all 0.2s ease;
+    border-left: 2px solid #1E90FF; /* Визуальный эфект при наведении и смена цвета*/
+    padding-left: 5px; /*При наведении текст отходит в право*/
+    transition: all 0.2s ease; /*Добавление анимации, чистата движения текста*/
 }
 
 .list_menu a:hover {
-    border-left: 2px solid #00FFFF;
-    padding-left: 10px;
-    transition: all 0.2s ease;
+    border-left: 2px solid #00FFFF; /* Визуальный эфект при наведении и смена цвета*/
+    padding-left: 10px; /*При наведении текст отходит в право*/
+    transition: all 0.2s ease; /*Добавление анимации, чистата движения текста*/
 }
 
 .footer_menu p {
@@ -50,21 +50,21 @@
 .menu {
     padding: 25vh 50px; /*Сдвиг меню по центру: Лево и право по 25, верх и низ по 50*/
     position: fixed; /*Меню пверх рисунка фона*/
-    background: rgba(20, 20, 20, 0.5);
-    height: 100vh;
-    backdrop-filter: blur(16px);
-    border-right: 5px solid #0a3560;
-    left: -346px;
-    transition: all 0.2s ease;
+    background: rgba(20, 20, 20, 0.5); /*Добавляем фон меню и прозрачность 0,5*/
+    height: 100vh; /*Высота блока*/
+    backdrop-filter: blur(16px); /*Указываем размытие фона блока*/
+    border-right: 5px solid #0a3560; /* Добавление границы по правой стороне и её цвет*/
+    left: -346px; /*Появление поля меню*/
+    transition: all 0.2s ease; /*Добавление анимации в поле меню (чистата движения)*/
 }
 
 .menu:hover {
-    left: 0;
-    transition: all 0.2s ease;
+    left: 0; /*Исчезание поля меню*/
+    transition: all 0.2s ease; /*Добавление анимации в поле меню (чистата движения)*/
 }
 
 .content {
-    width: 100vw; /*Убираем скрол на странице*/
-    height: 100vh;
+    width: 100vw; /*Убираем скрол на странице, ширина окна браузера-100*/
+    height: 100vh; /*Убираем скрол на странице, высота окна браузера-100*/
     overflow: hidden; /*Выравнивание страницы по краям*/
 }
